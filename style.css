@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+*::selection{
+    background-color: rgba(255, 0, 0, 0);
+}
+.sidebar .link_icon{
+    color:#fff;
+    font-size: 20px;
+}
+.sidebar .link_comment{
+    color: #fff;
+    font-size:16px;
+    font-weight: 500;
+    font-weight:normal;
+}
+body{
+    width:100%;
+    height:100vh;
+    background-image:url(https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.top_navbar{
+    width:100%;
+    height: 60px;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    background-color:#81C6E8;
+    justify-content: space-between;
+}
+
+.top_navbar .image{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius:50%;
+    background-size: cover;
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-image: url(https://shaxsiyrasm.netlify.app/img/15.jpg);
+}
+
+.menu_icon{
+    width:40px;
+    height:40px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.whiteMenu{
+    color: #fff;
+    transition:0.2s;
+}
+.menu_icon  .top_menu_icon{
+    z-index:1000;
+    cursor: pointer;
+    position: absolute;
+    font-size:30px !important;
+}
+
+.container-fluid{
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    min-height: 100vh;
+}
+.container_fluid_toggle{
+    transition:all 0.2s ease !important;
+    backdrop-filter: blur(5px) !important;
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) !important;
+}
+.container-fluid .sidebar{
+    top:0;
+    left:-100%;
+    height:100vh;
+    display: flex;
+    overflow-y:auto;
+    max-width:250px;
+    overflow-x:hidden;
+    position:relative;
+    align-items: center;
+    flex-direction: column;
+    background-color:#4649FF;
+    transition:left 0.3s ease;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(0, 0, 0, 0.8) -6px -2px 16px 0px;
+}
+.sidebar_toggle{
+    top:0 !important;
+    left:0 !important;
+    transition:left 0.1s ease !important;
+}
+.sidebar .sidebar_body{
+    width:100%;
+    padding: 10px;
+}
+/* sidebar head */
+.sidebar_body .sidebar_head{
+    width: 100%;
+    height:60px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar_head .brend_logo{
+    width:60px;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.sidebar_head .brend_text .text{
+    color:#EDEDED;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.brend_logo img{
+    width:40px;
+    height: 40px;
+    border-radius:10px;
+    background-color:#fff;
+}
+
+
+/* sidebar body*/
+.sidebar_body .menu_links{
+    margin-top:10px;
+}
+
+.menu_links .link_height{
+    width:100%;
+    height:40px;
+    margin-top:15px;
+}
+
+.link_height a{
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.link_height a:hover{
+    transform:translateX(15px);
+}
+.link_height a:hover:after{
+    position: absolute;
+    content:'';
+    width: 5px;
+    height: 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid;
+}
+
+.link_height a i{
+    width:50px;
+    display:flex;
+    justify-content: center;
+}
+
+
+
+/* footer */
+.sidebar_footer{
+    width: 100%;
+    height:40px;
+}
+.footer_content{
+    width:100%;
+    height:100%;
+    background-color:#fff;
+}
+.footer_content a{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_content a :where(i,span){
+    color:#4649FF !important;
+    font-weight: 600 !important;
+}
+
+.footer_content a i{
+    font-size:20px;
+    width:30px !important; 
+}
+
+
+
